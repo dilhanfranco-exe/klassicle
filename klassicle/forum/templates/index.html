@@ -1,6 +1,15 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
+
+
+{% for item in all%}
+  {{item}}  {{item}}  <br/>
+  Email:{{item.email}} <br/>
+  Age:{{item.age}} <br/><br/>
+  <hr>
+{% endfor %}
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -47,6 +56,7 @@
             <input type="password" placeholder="password"/>
             <button>login</button>
             <p class="message">Not registered? <a href="#">Create an account</a></p>
+          
           </form>
         </div>
       </div>
